@@ -59,8 +59,8 @@ include '../views/header.php';
   <link rel="stylesheet" type="text/css" href="../assets/css/shop-order-show.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/video-show.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/promo-show.css">
-  <!-- <link rel="stylesheet" type="text/css" href="assets/css/index.css"> -->
-  <!-- <link rel="stylesheet" type="text/css" href="assets/css/normalize.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="../assets/css/index.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css"> -->
   <!-- searchbox -->
   <link rel="stylesheet" type="text/css" href="../assets/css/searchbox.css">
   <!-- shopresult -->
@@ -74,12 +74,7 @@ include '../views/header.php';
 </head>
 <body>
   
-<!-- pagetop============================== -->
-<!-- <p class="pagetop" style="bottom:100%;">
-  <a href="#pageTop">
-    <img src="../assets/images/pageTop.gif" class="animated infinite ">
-  </a>
-</p> -->
+
 </head>
 <!-- <?php
 include '../common/Navbar.php';
@@ -87,6 +82,313 @@ include '../common/Searchbox.php';
 ?> -->
 <body>
 
+
+
+
+                 <!-- 燈箱：登入 -->
+          <div id="loginBox" style="display: none;">
+            <div class="memLogin">
+              <div class="memLogin-container">
+                <div class="memLogin-contain">
+                  <img src="../assets/images/Searchbox-pon.png">
+                  <div class="memLogin-account">
+                    帳號： <input type="text" name="memId" size="18" maxlength="15" id="memId">
+                  </div>
+                  <div class="memLogin-psw">
+                    密碼： <input type="password" name="memPsw" size="18" maxlength="15" id="memPsw">
+                  </div>
+                  <div class="memLogin-submit">
+                    <input type="submit" name="memSubmit" value="登入" id="btnLogin">
+                    <input type="button" id="btnLoginCancel" value="取消">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<div class="Navbar">
+        <div class="Navbar-container col-xs-0">
+          <ul class="mt5 col-sm-12">
+            <li><a href="index.html" class="col-sm-2"><img src="../assets/images/navbar/Navbar-logo.png" alt="foodie"/></a></li>
+            <li><a href="pages/MapSearch.html" class="Navbar-li col-sm-1"><img src="../assets/images/navbar/Navbar-position.svg" alt="position"/><div>定位搜索</div></a></li>
+            <li><a href="pages/secret.html" class="Navbar-li col-sm-1"><img src="../assets/images/navbar/Navbar-news.svg" alt="news"/><div>攤車報導</div></a></li>
+            <li><a href="pages/videoArea.html" class="Navbar-li col-sm-1"><img src="../assets/images/navbar/Navbar-movie.svg" alt="movie"/><div>影音宣傳</div></a></li>
+            <li>
+            <form name="Navbar-searchlist" method="get" action="pages/searchResult.html">
+              <div class="col-sm-3">
+                <input type="text" placeholder="搜尋美食或攤車名" class="Navbar-search" name="Navbar-searchname" id="Navbar-searchname"/>
+                <label for="Navbar-submit">
+                  <div class="Navbar-search-go" >
+                    <!-- <img src="../assets/images/Searchbox-search.png"> -->
+                  </div>
+                </label>
+                <input type="submit" name="Navbar-submit" id="Navbar-submit">
+              </div>
+            </form>
+            </li>
+
+<!-- 
+<?php
+if( isset($_SESSION["memName"]) === true){
+?>
+            <li>
+              <div class="Navbar-border col-sm-4">
+                <a href="pages/shopArea.html"><img src="../assets/images/navbar/Navbar-factor.svg" class="Navbar-shoplogin" alt="factorlogin"/>
+                <div href="pages/shopArea.html" class="Navbar-member">攤商專區</div></a>
+                <div class="col-sm-12">
+                <span id="memName"></span>
+                  
+                  <a href="pages/shopArea.html" class="Navbar-memtxt hvr-underline-from-left">Hi!&nbsp;<?php echo $_SESSION["memName"] ?>&nbsp;老闆你好</a> -->
+<!-- 
+                  <a href="pages/Sessionout.html" class="Navbar-memtxt colorLightPink hvr-underline-from-left">&nbsp;/&nbsp;登出</a>
+                  <a href="pages/ShopRegister.html" class="Navbar-memtxt">註冊</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div> -->
+<!-- <?php
+  }else if(isset($_SESSION["memId"]) === true){
+?>
+            <li>
+              <div class="col-sm-4">
+                <a href="pages/memArea.html"><img src="../assets/images/navbar/Navbar-login.svg" class="Navbar-login" alt="memlogin"/>
+                <div class="Navbar-member">會員專區</div></a>
+                <div class="col-sm-12">
+
+                  <a href="pages/memArea.html" class="Navbar-memtxt hvr-underline-from-left">Hi!吃貨&nbsp;<?php echo $_SESSION["name"] ?>&nbsp;你好^_^</a>
+                  
+                  <a href="pages/Sessionout.html" class="Navbar-memtxt colorLightPink hvr-underline-from-left">&nbsp;/&nbsp;&nbsp;登出</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+
+<?php
+  }else{
+?> -->
+            <li>
+              <div class="col-sm-1">
+                <img src="../assets/images/navbar/Navbar-login.svg" class="Navbar-login" alt="memlogin"/>
+                <div class="Navbar-member">會員</div>
+                <div class="col-sm-12 ">
+                  <a href="pages/memLogin.html" class="Navbar-memtxt hvr-underline-from-left">登入</a>
+                  <a href="pages/memRegister.html" class="Navbar-memtxt hvr-underline-from-left">註冊</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="Navbar-border col-sm-1">
+                <img src="../assets/images/navbar/Navbar-factor.svg" class="Navbar-shoplogin" alt="factorlogin"/>
+                <div class="Navbar-member">攤商</div>
+                <div class="col-sm-12">
+                <span id="memName"></span>
+                  <span  class="Navbar-memtxt hvr-underline-from-left" id="spanLogin">登入</span>
+                  <a href="pages/ShopRegister.html" class="Navbar-memtxt hvr-underline-from-left">註冊</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+<!-- <?php
+  }
+?>
+ -->
+
+
+
+
+        <div class="col-sm-0 container">
+          <a href="index.html"><img src="../assets/images/navbar/Navbar-logo.png" alt="foodie" class="Navbar-rwdlogo"/></a>
+          <div class="menu-wrap">
+            <div class="menu col-xs-12">
+              <!-- <div class="Navbar-rwd"> -->    
+
+
+
+                <Menu>
+                <form name="Navbar-searchlistphone" method="get" action="pages/searchResult.html">
+                    <input type="text" placeholder="搜尋美食或攤車名" class="Navbar-search" name="Navbar-searchname" />
+                    <label for="Navbar-submitphone">
+                    <div class="Navbar-search-go">
+                    
+                    
+                  <!-- <img src="../assets/images/Searchbox-search.png"> -->
+                </div>
+                <input type="submit" name="Navbar-submitphone" id="Navbar-submitphone"></label>
+                </form>
+
+                    <div class="col-xs-12"><a href="pages/MapSearch.html" class="Navbar-li col-xs-12"><img class="pAdject" src="../assets/images/navbar/Navbar-position.svg" alt="position"/>定位搜索</a></div>
+                    <div class="col-xs-12"><a href="pages/secret.html" class="Navbar-li col-xs-12"><img class="pAdject" src="../assets/images/navbar/Navbar-news.svg" alt="news"/>攤車報導</a></div>
+                    <div class="col-xs-12"><a href="pages/videoArea.html" class="Navbar-li col-xs-12"><img class="pAdject" src="../assets/images/navbar/Navbar-movie.svg" alt="movie"/>影音宣傳</a></div>
+                    
+<!--                <div class="Navbar-rwdlogin col-xs-12">
+                      <img src="../assets/images/navbar/Navbar-login.svg" class="col-xs-6" alt="memlogin"/>
+                      <a href="pages/memLogin.html" class="Navbar-logintxt col-xs-3">會員登入</a>
+                      <a href="pages/memRegister.html" class="Navbar-logintxt">註冊</a>
+                    </div> -->
+
+<!-- 手機板-->
+
+<!-- 
+<?php
+if( isset($_SESSION["memName"]) === true){
+?>
+      <div class="Navbar-rwdlogin col-xs-12">
+        <a href="pages/shopArea.html"><img src="../assets/images/navbar/Navbar-factor.svg" class="col-xs-6" alt="factor"/></a>
+        <a href="pages/shopArea.html"　href="pages/shopArea.html" class="Navbar-logintxt col-xs-5">攤商專區</a>
+        <a href="pages/shopArea.html"　href="pages/shopArea.html" class="Navbar-memtxt hvr-underline-from-left">Hi!&nbsp;<?php echo $_SESSION["memName"]?>&nbsp;老闆你好</a>
+        <a href="pages/Sessionout.html" class="Navbar-memtxt colorLightPink hvr-underline-from-left">&nbsp;/&nbsp;登出</a>
+      </div>
+<?php
+  }else if(isset($_SESSION["memId"]) === true){
+?>
+      <div class="Navbar-rwdlogin col-xs-12">
+        <a href="pages/memArea.html"><img src="../assets/images/navbar/Navbar-login.svg" class="col-xs-6" alt="memlogin"/></a>
+        <a href="pages/memArea.html" class="Navbar-logintxt col-xs-5">會員專區</a>
+        <a href="pages/memArea.html" class="Navbar-memtxt hvr-underline-from-left">Hi!吃貨&nbsp;<?php echo $_SESSION["name"] ?>&nbsp;你好^_^</a>
+        <a href="pages/Sessionout.html" class="Navbar-memtxt colorLightPink hvr-underline-from-left">&nbsp;/&nbsp;登出</a>
+      </div>
+<?php
+  }else{
+?> -->
+      <div class="Navbar-rwdlogin col-xs-12">
+        <img src="../assets/images/navbar/Navbar-login.svg" class="col-xs-6" alt="memlogin"/>
+        <a class="Navbar-logintxt col-xs-3">會員</a>
+        <a href="pages/memLogin.html" class="Navbar-memtxt">登入</a>
+        <a href="pages/memRegister.html" class="Navbar-memtxt">註冊</a>
+      </div>
+      <div class="Navbar-rwdlogin col-xs-12">
+        <img src="../assets/images/navbar/Navbar-factor.svg" class="col-xs-6" alt="factor"/>
+        <a class="Navbar-logintxt col-xs-3">攤商</a>
+        <span  class="Navbar-memtxt" id="spanLogin2">登入</span>
+        <a href="pages/ShopRegister.html" class="Navbar-memtxt">註冊</a>
+      </div>
+<!-- <?php
+  }
+?> -->
+
+
+
+<!--                     <div class="Navbar-rwdlogin col-xs-12">
+                      <img src="../assets/images/navbar/Navbar-factor.svg" class="col-xs-6" alt="factor"/>
+                      <a href="pages/memLogin.html" class="Navbar-logintxt col-xs-4">攤商登入</a>
+                      <a href="pages/ShopRegister.html" class="Navbar-logintxt ">註冊</a>
+                    </div> -->
+                </Menu>
+              </div>
+              <button class="close-button" id="close-button">Close Menu</button>
+                  <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+                      <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
+                    </svg>
+                  </div>
+            <!-- </div> -->
+            
+          </div>
+          <button class="menu-button" id="open-button"></button>
+            <div class="content-wrap">
+              <div class="content">
+                <header class="codrops-header">
+                </header>
+              </div>
+             </div>
+        </div>
+        <form action="/" method="post">
+        <div class="Navbar-LightboxShow">
+          <div class="Navbar-Lightbox">
+            <div class="Navbar-Lightbox-title">會員</div>
+            <div class="Navbar-account">帳號：</div>
+            <div class="Navbar-input1"><input type="text" name="account" id="account"/></div>
+            
+            <div class="Navbar-password">密碼：</div>
+            <div class="Navbar-input2"><input type="password" name="password" id="password"/></div>
+            
+            <div class="Navbar-submitLogin">
+              <input type="submit" name="Navbar-submitLogin" id="NavbarSubmitLogin" value="登入"/>
+            </div>
+          </div>
+        </div>
+        </form>
+      </div>    
+      
+      
+
+      
+<script type="text/javascript" src="../assets/js/login2.js"></script>
+
+
+<!-- ==searchbox====================================================================    -->
+
+      <div class="SearchBox">
+        <div class="SearchBox-bg">
+          <div class="SearchBox-container">
+            <div class="col-sm-12">
+              <div class="SearchBox-title col-sm-2 col-xs-0">攤車篩選</div>
+          <form name="SearchBox-searchlist" method="get" action="pages/shopResult.html">
+                <div>
+                  <select class="SearchBox-select SearchBox-select1" name="SearchBox-place" id="SearchBox-place">
+                    <option value="111">台北市</option>
+                    <option value="222">新北市</option>
+                    <option value="333">桃園市</option>
+                    <option value="444">台中市</option>
+                    <option value="555">宜蘭縣</option>
+                  </select>
+                </div>
+                <div>
+                  <select class="SearchBox-select" name="SearchBox-miniplace" id="SearchBox-miniplace">
+                    <option value="111">信義區</option>
+                    <option value="222">文山區</option>
+                    <option value="333">中山區</option>
+                    <option value="444">景美區</option>
+                    <option value="555">南港鄉</option>
+                  </select>
+                </div>
+                <div>
+                  <select class="SearchBox-select" name="SearchBox-foodtype">
+                    <option value="/">全部餐點</option>
+                    <option value="主食類">主食類</option>
+                    <option value="炸物">炸物</option>
+                    <option value="烤物">烤物</option>
+                    <option value="蒸物">蒸物</option>
+                    <option value="滷味">滷味</option>
+                    <option value="甜點飲料">甜點飲料</option>
+                    <option value="其他">其他</option>
+                  </select>
+                </div>
+                <div>
+                  <select class="SearchBox-select col-xs-0" name="SearchBox-shoptime">
+                    <option value="/">全時段</option>
+                    <option value="上午">上午</option>
+                    <option value="中午">中午</option>
+                    <option value="下午">下午</option>
+                    <option value="晚上">晚上</option>
+                    <option value="深夜">深夜</option>
+                  </select>
+                </div>
+                <div>
+                  <select class="SearchBox-select col-sm-0" name="SearchBox-shoptime">
+                    <option value="/">全時段</option>
+                    <option value="上午">上午</option>
+                    <option value="中午">中午</option>
+                    <option value="下午">下午</option>
+                    <option value="晚上">晚上</option>
+                    <option value="深夜">深夜</option>
+                  </select>
+                </div>
+                <a href=""><input type="submit" value="搜尋" id="SearchBox-submit"/></a>
+                <img src="../assets/images/searchbox/Searchbox-search.png" class="SearchBox-searchGo col-xs-0" alt="searchGo"/>
+          </form>
+            </div>
+          </div>
+      </div>
+        <div class="SearchBox-pon"></div>
+        <div class="clearfix"></div>
+     </div>
 
 
 <!-- ============================================================================= -->
@@ -125,7 +427,7 @@ include '../common/Searchbox.php';
               <p>定位搜索</p>
               <!-- ////////////////////////////////////////////////////////////////// -->
                   <label for="friedrice">
-                  <form class="ShopResult-Shoplist" name="ShopResult-Shoplist" method="get" action="ShopResultItemSession.php">
+                  <form class="ShopResult-Shoplist" name="ShopResult-Shoplist" method="get" action="">
               <!-- ////////////////////////////////////////////////////////////////// -->
                   <div class="MapSearch-Item">
 
@@ -167,7 +469,7 @@ include '../common/Searchbox.php';
               <div class="MapSearch-Item">
                 <!-- ////////////////////////////////////////////////////////////////// -->
                   <label for="friedrice2">
-                  <form class="ShopResult-Shoplist" name="ShopResult-Shoplist" method="get" action="ShopResultItemSession.php">
+                  <form class="ShopResult-Shoplist" name="ShopResult-Shoplist" method="get" action="">
               <!-- ////////////////////////////////////////////////////////////////// -->
                 <div class="MapSearch-ItemPic">
                   <img src='../assets/images/sripic/tree-2.jpg' alt="攤商照片"/>
@@ -209,7 +511,7 @@ include '../common/Searchbox.php';
               <div class="MapSearch-Item">
                 <!-- ////////////////////////////////////////////////////////////////// -->
                   <label for="friedrice3">
-                  <form class="ShopResult-Shoplist" name="ShopResult-Shoplist" method="get" action="ShopResultItemSession.php">
+                  <form class="ShopResult-Shoplist" name="ShopResult-Shoplist" method="get" action="">
               <!-- ////////////////////////////////////////////////////////////////// -->
                 <div class="MapSearch-ItemPic">
                   <img src='../assets/images/sripic/wolf-2.jpg' alt="攤商照片"/>
@@ -249,7 +551,7 @@ include '../common/Searchbox.php';
               <div class="MapSearch-Item">
                 <!-- ////////////////////////////////////////////////////////////////// -->
                   <label for="friedrice4">
-                  <form class="ShopResult-Shoplist" name="ShopResult-Shoplist" method="get" action="ShopResultItemSession.php">
+                  <form class="ShopResult-Shoplist" name="ShopResult-Shoplist" method="get" action="">
               <!-- ////////////////////////////////////////////////////////////////// -->
                 <div class="MapSearch-ItemPic">
                   <img src='../assets/images/sripic/soy-2.jpg' alt="攤商照片"/>
@@ -289,7 +591,7 @@ include '../common/Searchbox.php';
               <div class="MapSearch-Item">
                 <!-- ////////////////////////////////////////////////////////////////// -->
                   <label for="friedrice5">
-                  <form class="ShopResult-Shoplist" name="ShopResult-Shoplist" method="get" action="ShopResultItemSession.php">
+                  <form class="ShopResult-Shoplist" name="ShopResult-Shoplist" method="get" action="">
               <!-- ////////////////////////////////////////////////////////////////// -->
                 <div class="MapSearch-ItemPic">
                   <img src='../assets/images/sripic/toFu-2.jpg' alt="攤商照片"/>
@@ -329,7 +631,7 @@ include '../common/Searchbox.php';
               <div class="MapSearch-Item">
                 <!-- ////////////////////////////////////////////////////////////////// -->
                   <label for="friedrice6">
-                  <form class="ShopResult-Shoplist" name="ShopResult-Shoplist" method="get" action="ShopResultItemSession.php">
+                  <form class="ShopResult-Shoplist" name="ShopResult-Shoplist" method="get" action="">
               <!-- ////////////////////////////////////////////////////////////////// -->
                 <div class="MapSearch-ItemPic">
                   <img src='../assets/images/sripic/wine-2.jpg' alt="攤商照片"/>
@@ -409,7 +711,7 @@ include '../common/Searchbox.php';
 <script src="../assets/js/classie.js"></script>
 <script src="../assets/js/main3.js"></script>
 <!-- index -->
-<!-- <script src="assets/js/snap.svg-min.js"></script> -->
+<!-- <script src="../assets/js/snap.svg-min.js"></script> -->
 <!-- searchbox -->
 <script src="../assets/js/searchbox.js"></script>
 <!-- shopresult -->
