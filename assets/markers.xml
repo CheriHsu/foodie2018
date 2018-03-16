@@ -1,0 +1,9 @@
+<markers>
+<marker id="1" name="炸飯糰最好吃" lat="24.9650192" lng="121.1909533"  rating="★★★☆☆  " rate="評價:3" tag="主食類/炸物" work="營業中" location="桃園市中壢區中央路" photo="../assets/images/sripic/shopresultitem_carb.jpg" type="snack"/>
+<marker id="2" name="森流浪" lat="24.9651766" lng="121.1910092"  rating="★★★★★  " rate="評價:5" tag="主食/烤物/其他" work="營業中" location="桃園市中壢區中央路" photo="../assets/images/sripic/tree-2.jpg" type="main"/>
+<marker id="3" name="極八狼" lat="24.9644863" lng="121.1913213"  rating="★★★☆☆  " rate="評價:3" tag="主食/烤物/其他" work="營業中" location="桃園市中壢區中央路" photo="../assets/images/sripic/wolf-2.jpg" type="fry"/>
+<marker id="4" name="綠豆皮" lat="24.964358" lng="121.1921211" rating="★★★★★  " rate="評價:5" tag="主食類/炸物" work="營業中" location="桃園市中壢區中央路" photo="../assets/images/sripic/soy-2.jpg" type="main"/>
+<marker id="5" name="一碗豆腐" lat="24.9644671" lng="121.1938884" rating="★★★★☆  " rate="評價:4" tag="主食/炸物/其他" work="營業中" location="桃園市中壢區五興路"  photo="../assets/images/sripic/toFu-2.jpg" type="main"/>
+<marker id="6" name="酒窩" lat="24.9649119" lng="121.1935871" rating="★★★★★  " rate="評價:5" tag="主食/甜點飲料/其他" work="營業中" location="桃園市中壢區五興路"  photo="../assets/images/sripic/wine-2.jpg" type="snack"/>
+
+</markers>
