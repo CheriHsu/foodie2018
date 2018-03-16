@@ -109,12 +109,12 @@ include '../common/Searchbox.php';
 <div class="Navbar">
         <div class="Navbar-container col-xs-0">
           <ul class="mt5 col-sm-12">
-            <li><a href="index.html" class="col-sm-2"><img src="../assets/images/navbar/Navbar-logo.png" alt="foodie"/></a></li>
-            <li><a href="pages/MapSearch.html" class="Navbar-li col-sm-1"><img src="../assets/images/navbar/Navbar-position.svg" alt="position"/><div>定位搜索</div></a></li>
-            <li><a href="pages/secret.html" class="Navbar-li col-sm-1"><img src="../assets/images/navbar/Navbar-news.svg" alt="news"/><div>攤車報導</div></a></li>
-            <li><a href="pages/videoArea.html" class="Navbar-li col-sm-1"><img src="../assets/images/navbar/Navbar-movie.svg" alt="movie"/><div>影音宣傳</div></a></li>
+            <li><a href="../index.html" class="col-sm-2"><img src="../assets/images/navbar/Navbar-logo.png" alt="foodie"/></a></li>
+            <li><a href="../pages/MapSearch.html" class="Navbar-li col-sm-1"><img src="../assets/images/navbar/Navbar-position.svg" alt="position"/><div>定位搜索</div></a></li>
+            <li><a href="../pages/secret.html" class="Navbar-li col-sm-1"><img src="../assets/images/navbar/Navbar-news.svg" alt="news"/><div>攤車報導</div></a></li>
+            <li><a href="../pages/videoArea.html" class="Navbar-li col-sm-1"><img src="../assets/images/navbar/Navbar-movie.svg" alt="movie"/><div>影音宣傳</div></a></li>
             <li>
-            <form name="Navbar-searchlist" method="get" action="pages/searchResult.html">
+            <form name="Navbar-searchlist" method="get" action="../pages/searchResult.html">
               <div class="col-sm-3">
                 <input type="text" placeholder="搜尋美食或攤車名" class="Navbar-search" name="Navbar-searchname" id="Navbar-searchname"/>
                 <label for="Navbar-submit">
@@ -133,15 +133,15 @@ if( isset($_SESSION["memName"]) === true){
 ?>
             <li>
               <div class="Navbar-border col-sm-4">
-                <a href="pages/shopArea.html"><img src="../assets/images/navbar/Navbar-factor.svg" class="Navbar-shoplogin" alt="factorlogin"/>
-                <div href="pages/shopArea.html" class="Navbar-member">攤商專區</div></a>
+                <a href="../pages/shopArea.html"><img src="../assets/images/navbar/Navbar-factor.svg" class="Navbar-shoplogin" alt="factorlogin"/>
+                <div href="../pages/shopArea.html" class="Navbar-member">攤商專區</div></a>
                 <div class="col-sm-12">
                 <span id="memName"></span>
                   
-                  <a href="pages/shopArea.html" class="Navbar-memtxt hvr-underline-from-left">Hi!&nbsp;<?php echo $_SESSION["memName"] ?>&nbsp;老闆你好</a> -->
+                  <a href="../pages/shopArea.html" class="Navbar-memtxt hvr-underline-from-left">Hi!&nbsp;<?php echo $_SESSION["memName"] ?>&nbsp;老闆你好</a> -->
 <!-- 
-                  <a href="pages/Sessionout.html" class="Navbar-memtxt colorLightPink hvr-underline-from-left">&nbsp;/&nbsp;登出</a>
-                  <a href="pages/ShopRegister.html" class="Navbar-memtxt">註冊</a>
+                  <a href="../pages/Sessionout.html" class="Navbar-memtxt colorLightPink hvr-underline-from-left">&nbsp;/&nbsp;登出</a>
+                  <a href="../pages/ShopRegister.html" class="Navbar-memtxt">註冊</a>
                 </div>
               </div>
             </li>
@@ -153,13 +153,13 @@ if( isset($_SESSION["memName"]) === true){
 ?>
             <li>
               <div class="col-sm-4">
-                <a href="pages/memArea.html"><img src="../assets/images/navbar/Navbar-login.svg" class="Navbar-login" alt="memlogin"/>
+                <a href="../pages/memArea.html"><img src="../assets/images/navbar/Navbar-login.svg" class="Navbar-login" alt="memlogin"/>
                 <div class="Navbar-member">會員專區</div></a>
                 <div class="col-sm-12">
 
-                  <a href="pages/memArea.html" class="Navbar-memtxt hvr-underline-from-left">Hi!吃貨&nbsp;<?php echo $_SESSION["name"] ?>&nbsp;你好^_^</a>
+                  <a href="../pages/memArea.html" class="Navbar-memtxt hvr-underline-from-left">Hi!吃貨&nbsp;<?php echo $_SESSION["name"] ?>&nbsp;你好^_^</a>
                   
-                  <a href="pages/Sessionout.html" class="Navbar-memtxt colorLightPink hvr-underline-from-left">&nbsp;/&nbsp;&nbsp;登出</a>
+                  <a href="../pages/Sessionout.html" class="Navbar-memtxt colorLightPink hvr-underline-from-left">&nbsp;/&nbsp;&nbsp;登出</a>
                 </div>
               </div>
             </li>
@@ -175,8 +175,8 @@ if( isset($_SESSION["memName"]) === true){
                 <img src="../assets/images/navbar/Navbar-login.svg" class="Navbar-login" alt="memlogin"/>
                 <div class="Navbar-member">會員</div>
                 <div class="col-sm-12 ">
-                  <a href="pages/memLogin.html" class="Navbar-memtxt hvr-underline-from-left">登入</a>
-                  <a href="pages/memRegister.html" class="Navbar-memtxt hvr-underline-from-left">註冊</a>
+                  <a href="../pages/memLogin.html" class="Navbar-memtxt hvr-underline-from-left">登入</a>
+                  <a href="../pages/memRegister.html" class="Navbar-memtxt hvr-underline-from-left">註冊</a>
                 </div>
               </div>
             </li>
@@ -187,7 +187,7 @@ if( isset($_SESSION["memName"]) === true){
                 <div class="col-sm-12">
                 <span id="memName"></span>
                   <span  class="Navbar-memtxt hvr-underline-from-left" id="spanLogin">登入</span>
-                  <a href="pages/ShopRegister.html" class="Navbar-memtxt hvr-underline-from-left">註冊</a>
+                  <a href="../pages/ShopRegister.html" class="Navbar-memtxt hvr-underline-from-left">註冊</a>
                 </div>
               </div>
             </li>
@@ -203,7 +203,7 @@ if( isset($_SESSION["memName"]) === true){
 
 
         <div class="col-sm-0 container">
-          <a href="index.html"><img src="../assets/images/navbar/Navbar-logo.png" alt="foodie" class="Navbar-rwdlogo"/></a>
+          <a href="../index.html"><img src="../assets/images/navbar/Navbar-logo.png" alt="foodie" class="Navbar-rwdlogo"/></a>
           <div class="menu-wrap">
             <div class="menu col-xs-12">
               <!-- <div class="Navbar-rwd"> -->    
@@ -211,7 +211,7 @@ if( isset($_SESSION["memName"]) === true){
 
 
                 <Menu>
-                <form name="Navbar-searchlistphone" method="get" action="pages/searchResult.html">
+                <form name="Navbar-searchlistphone" method="get" action="">
                     <input type="text" placeholder="搜尋美食或攤車名" class="Navbar-search" name="Navbar-searchname" />
                     <label for="Navbar-submitphone">
                     <div class="Navbar-search-go">
@@ -222,14 +222,14 @@ if( isset($_SESSION["memName"]) === true){
                 <input type="submit" name="Navbar-submitphone" id="Navbar-submitphone"></label>
                 </form>
 
-                    <div class="col-xs-12"><a href="pages/MapSearch.html" class="Navbar-li col-xs-12"><img class="pAdject" src="../assets/images/navbar/Navbar-position.svg" alt="position"/>定位搜索</a></div>
-                    <div class="col-xs-12"><a href="pages/secret.html" class="Navbar-li col-xs-12"><img class="pAdject" src="../assets/images/navbar/Navbar-news.svg" alt="news"/>攤車報導</a></div>
-                    <div class="col-xs-12"><a href="pages/videoArea.html" class="Navbar-li col-xs-12"><img class="pAdject" src="../assets/images/navbar/Navbar-movie.svg" alt="movie"/>影音宣傳</a></div>
+                    <div class="col-xs-12"><a href="../pages/MapSearch.html" class="Navbar-li col-xs-12"><img class="pAdject" src="../assets/images/navbar/Navbar-position.svg" alt="position"/>定位搜索</a></div>
+                    <div class="col-xs-12"><a href="../pages/secret.html" class="Navbar-li col-xs-12"><img class="pAdject" src="../assets/images/navbar/Navbar-news.svg" alt="news"/>攤車報導</a></div>
+                    <div class="col-xs-12"><a href="../pages/videoArea.html" class="Navbar-li col-xs-12"><img class="pAdject" src="../assets/images/navbar/Navbar-movie.svg" alt="movie"/>影音宣傳</a></div>
                     
 <!--                <div class="Navbar-rwdlogin col-xs-12">
                       <img src="../assets/images/navbar/Navbar-login.svg" class="col-xs-6" alt="memlogin"/>
-                      <a href="pages/memLogin.html" class="Navbar-logintxt col-xs-3">會員登入</a>
-                      <a href="pages/memRegister.html" class="Navbar-logintxt">註冊</a>
+                      <a href="../pages/memLogin.html" class="Navbar-logintxt col-xs-3">會員登入</a>
+                      <a href="../pages/memRegister.html" class="Navbar-logintxt">註冊</a>
                     </div> -->
 
 <!-- 手機板-->
@@ -239,19 +239,19 @@ if( isset($_SESSION["memName"]) === true){
 if( isset($_SESSION["memName"]) === true){
 ?>
       <div class="Navbar-rwdlogin col-xs-12">
-        <a href="pages/shopArea.html"><img src="../assets/images/navbar/Navbar-factor.svg" class="col-xs-6" alt="factor"/></a>
-        <a href="pages/shopArea.html"　href="pages/shopArea.html" class="Navbar-logintxt col-xs-5">攤商專區</a>
-        <a href="pages/shopArea.html"　href="pages/shopArea.html" class="Navbar-memtxt hvr-underline-from-left">Hi!&nbsp;<?php echo $_SESSION["memName"]?>&nbsp;老闆你好</a>
-        <a href="pages/Sessionout.html" class="Navbar-memtxt colorLightPink hvr-underline-from-left">&nbsp;/&nbsp;登出</a>
+        <a href="../pages/shopArea.html"><img src="../assets/images/navbar/Navbar-factor.svg" class="col-xs-6" alt="factor"/></a>
+        <a href="../pages/shopArea.html"　href="../pages/shopArea.html" class="Navbar-logintxt col-xs-5">攤商專區</a>
+        <a href="../pages/shopArea.html"　href="../pages/shopArea.html" class="Navbar-memtxt hvr-underline-from-left">Hi!&nbsp;<?php echo $_SESSION["memName"]?>&nbsp;老闆你好</a>
+        <a href="../pages/Sessionout.html" class="Navbar-memtxt colorLightPink hvr-underline-from-left">&nbsp;/&nbsp;登出</a>
       </div>
 <?php
   }else if(isset($_SESSION["memId"]) === true){
 ?>
       <div class="Navbar-rwdlogin col-xs-12">
-        <a href="pages/memArea.html"><img src="../assets/images/navbar/Navbar-login.svg" class="col-xs-6" alt="memlogin"/></a>
-        <a href="pages/memArea.html" class="Navbar-logintxt col-xs-5">會員專區</a>
-        <a href="pages/memArea.html" class="Navbar-memtxt hvr-underline-from-left">Hi!吃貨&nbsp;<?php echo $_SESSION["name"] ?>&nbsp;你好^_^</a>
-        <a href="pages/Sessionout.html" class="Navbar-memtxt colorLightPink hvr-underline-from-left">&nbsp;/&nbsp;登出</a>
+        <a href="../pages/memArea.html"><img src="../assets/images/navbar/Navbar-login.svg" class="col-xs-6" alt="memlogin"/></a>
+        <a href="../pages/memArea.html" class="Navbar-logintxt col-xs-5">會員專區</a>
+        <a href="../pages/memArea.html" class="Navbar-memtxt hvr-underline-from-left">Hi!吃貨&nbsp;<?php echo $_SESSION["name"] ?>&nbsp;你好^_^</a>
+        <a href="../pages/Sessionout.html" class="Navbar-memtxt colorLightPink hvr-underline-from-left">&nbsp;/&nbsp;登出</a>
       </div>
 <?php
   }else{
@@ -259,14 +259,14 @@ if( isset($_SESSION["memName"]) === true){
       <div class="Navbar-rwdlogin col-xs-12">
         <img src="../assets/images/navbar/Navbar-login.svg" class="col-xs-6" alt="memlogin"/>
         <a class="Navbar-logintxt col-xs-3">會員</a>
-        <a href="pages/memLogin.html" class="Navbar-memtxt">登入</a>
-        <a href="pages/memRegister.html" class="Navbar-memtxt">註冊</a>
+        <a href="../pages/memLogin.html" class="Navbar-memtxt">登入</a>
+        <a href="../pages/memRegister.html" class="Navbar-memtxt">註冊</a>
       </div>
       <div class="Navbar-rwdlogin col-xs-12">
         <img src="../assets/images/navbar/Navbar-factor.svg" class="col-xs-6" alt="factor"/>
         <a class="Navbar-logintxt col-xs-3">攤商</a>
         <span  class="Navbar-memtxt" id="spanLogin2">登入</span>
-        <a href="pages/ShopRegister.html" class="Navbar-memtxt">註冊</a>
+        <a href="../pages/ShopRegister.html" class="Navbar-memtxt">註冊</a>
       </div>
 <!-- <?php
   }
@@ -276,8 +276,8 @@ if( isset($_SESSION["memName"]) === true){
 
 <!--                     <div class="Navbar-rwdlogin col-xs-12">
                       <img src="../assets/images/navbar/Navbar-factor.svg" class="col-xs-6" alt="factor"/>
-                      <a href="pages/memLogin.html" class="Navbar-logintxt col-xs-4">攤商登入</a>
-                      <a href="pages/ShopRegister.html" class="Navbar-logintxt ">註冊</a>
+                      <a href="../pages/memLogin.html" class="Navbar-logintxt col-xs-4">攤商登入</a>
+                      <a href="../pages/ShopRegister.html" class="Navbar-logintxt ">註冊</a>
                     </div> -->
                 </Menu>
               </div>
@@ -329,7 +329,7 @@ if( isset($_SESSION["memName"]) === true){
           <div class="SearchBox-container">
             <div class="col-sm-12">
               <div class="SearchBox-title col-sm-2 col-xs-0">攤車篩選</div>
-          <form name="SearchBox-searchlist" method="get" action="pages/shopResult.html">
+          <form name="SearchBox-searchlist" method="get" action="../pages/shopResult.html">
                 <div>
                   <select class="SearchBox-select SearchBox-select1" name="SearchBox-place" id="SearchBox-place">
                     <option value="111">台北市</option>
